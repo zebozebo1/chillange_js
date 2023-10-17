@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    color: hsl(0, 0%, 100%);
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.75rem;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.7;
+}
+
+.icon {
+    background-color: hsla(217, 12%, 63%, 10%);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.main-container {
+    height: 410px;
+    width: 413px;
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%) 0%, hsla(213, 19%, 18%, 40%) 100%);
+    border-radius: 30px;
+    padding: 32px;
+}
+
+.rating-state-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star img {
+    height: 15px;
+    width: 16px;
+}
+
+.num-ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(217, 12%, 63%);
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+button:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit-button {
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    border-radius: 500px;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+}
+
+.submit-button:active {
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+}
+
+.thank-you-state-container {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px 35px;
+}
+
+.sub-image {
+    /* width: 45%; */
+    align-content: center;
+}
+
+.user-rating {
+    background-color: hsla(217, 12%, 63%, 10%);
+    border-radius: 50px;
+    height: 30px;
+    width: 50%;
+}
+
+.user-rating p {
+    color: hsl(25, 97%, 53%);
+}
